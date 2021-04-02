@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Twitter</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<script src="scripts/script.js" defer></script>
+</head>
+<body>
+		<div class="container row">
+			<header class="header">
+				<h1 class="visually-hidden">Twitter</h1>
+				<nav class="header__navigation">
+					<ul>
+						<li>
+							<a href="index.html" class="header__link header__link_main" aria-label="Твиттер">
+							</a>
+						</li>
+						<li>
+							<a href="index.html" class="header__link header__link_home" aria-label="Главная">
+
+							</a>
+						</li>
+						<li>
+							<button class="header__link header__link_profile" aria-label="Твиты пользователя">
+
+							</button>
+						</li>
+						<li>
+							<button class="header__link header__link_likes" aria-label="Понравившиеся твиты">
+
+
+							</button>
+						</li>
+						<li>
+							<button class="header__link header__link_tweet" aria-label="Твитнуть">
+
+							</button>
+						</li>
+					</ul>
+				</nav>
+				<img class="avatar" src="images/avatar.jpg" alt="Аватар">
+			</header>
+			<main class="main">
+				<section class="wrapper main-header">
+					<h2 class="main-header__title">Главная</h2>
+					<!--кнопка для сорировки популярные или по дате-->
+					<button class="header__link header__link_sort" aria-label="Последние твиты">
+
+					</button>
+				</section>
+				<section class="wrapper tweet-form">
+					<div class="tweet-form__wrapper">
+						<img class="tweet-form__avatar" src="images/avatar.jpg" alt="Аватар">
+
+						<div class="tweet-form__text" role="textbox" aria-label="Текст" contenteditable="true">
+							<p>Что происходит?</p>
+						</div>
+					</div>
+
+					<div class="tweet-form__btns">
+						<button class="tweet-img__btn" type="button" aria-label=""></button>
+						<button class="tweet-form__btn" type="submit">Твитнуть</button>
+					</div>
+				</section>
+				<section class="wrapper">
+					<ul class="tweet-list">
+						<!-- <li>
+							<article class="tweet">
+								<div class="row">
+									<img class="avatar" src="images/mary.jpg" alt="Аватар пользователя Мария">
+									<div class="tweet__wrapper">
+										<header class="tweet__header">
+											<h3 class="tweet-author">Мария Иванова
+												<span class="tweet-author__add tweet-author__nickname">@mary</span>
+												<time class="tweet-author__add tweet__date">11 января</time>
+											</h3>
+											<button class="tweet__delete-button chest-icon"></button>
+										</header>
+										<div class="tweet-post">
+											<p class="tweet-post__text">Сообщение Марии Lorem ipsum dolor sit amet, consectetur.</p>
+											<figure class="tweet-post__image">
+												<img src="https://images.pexels.com/photos/6432931/pexels-photo-6432931.jpeg" alt="Сообщение Марии Lorem ipsum dolor sit amet, consectetur.">
+											</figure>
+										</div>
+									</div>
+								</div>
+								<footer>
+									<button class="tweet__like">
+										53
+									</button>
+								</footer>
+							</article>
+						</li>
+
+						<li>
+							<article class="tweet">
+								<div class="row">
+									<img class="avatar" src="images/brock.jpg" alt="Аватар пользователя Брок">
+									<div class="tweet__wrapper">
+										<header class="tweet__header">
+											<h3 class="tweet-author">Brock Merge
+												<span class="tweet-author__add tweet-author__nickname">@brock</span>
+												<time class="tweet-author__add tweet__date">07 января</time>
+											</h3>
+											<button class="tweet__delete-button chest-icon"></button>
+										</header>
+										<div class="tweet-post">
+											<p class="tweet-post__text">Сообщение Брока> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid blanditiis dolorem eaque et, explicabo facere facilis harum laboriosam magni nobis numquam provident quam rem rerum, vero? Nostrum porro ratione sed.</p>
+
+										</div>
+									</div>
+								</div>
+								<footer>
+									<button class="tweet__like">
+										22
+									</button>
+								</footer>
+							</article>
+						</li> -->
+					</ul>
+				</section>
+			</main>
+
+		</div>
+		<div class="modal overlay">
+			<div class="container modal__body">
+				<div class="modal-close">
+					<button class="modal-close__btn chest-icon"></button>
+				</div>
+				<section class="tweet-form">
+					<div class="tweet-form__wrapper">
+						<img class="tweet-form__avatar" src="images/avatar.jpg" alt="Аватар">
+
+						<div class="tweet-form__text" role="textbox" aria-label="Текст" contenteditable="true">
+							<p>Что происходит?</p>
+						</div>
+					</div>
+					<div class="tweet-form__btns">
+						<button class="tweet-img__btn" type="button" aria-label=""></button>
+						<button class="tweet-form__btn" type="submit">Твитнуть</button>
+					</div>
+				</section>
+			</div>
+		</div>
+
+</body>
+</html>
